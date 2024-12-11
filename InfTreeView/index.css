@@ -1,0 +1,18 @@
+.InfButton {
+    border: none;
+    cursor: pointer;
+    transition: border 0.3s ease;
+    background-color: transparent;
+}
+
+.InfButton:active {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nodeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
