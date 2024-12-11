@@ -17,23 +17,24 @@ export const Fields = forwardRef<FieldsMethods, FieldsProps>((props: FieldsProps
     return (
         <div>
             <label htmlFor="Chave">Chave</label>
-            <input 
-            onChange={(e) => {
-                updateKey(e.target.value);
-                props.onKeyInputChange(e.target.value);
-            }} 
-            type="text" id="Chave"
+            <input
+                onChange={(e) => {
+                    updateKey(e.target.value);
+                    props.onKeyInputChange(e.target.value);
+                }}
+                type="text" id="Chave"
                 value={key}
             />
+        
             <label htmlFor="Valor">Valor</label>
             <input type="text" id="Valor" />
 
             <br />
             <label htmlFor="json">JSON</label>
-            <textarea id="json" 
-            onChange={(e) => updateJson(e.target.value)} 
-            value={json}></textarea>
-            <button onClick={() =>  {
+            <textarea id="json"
+                onChange={(e) => updateJson(e.target.value)}
+                value={json}></textarea>
+            <button onClick={() => {
                 props.onJsonInputChange(json);
                 updateJson("")
             }}>Importar JSON</button>

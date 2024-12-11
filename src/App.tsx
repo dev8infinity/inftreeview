@@ -116,9 +116,9 @@ function App() {
         onKeyInputChange={(newValue) => treeRef?.updateSelectedNodeText(newValue)}
         onJsonInputChange={(newValue) => treeRef?.updateFromJson(newValue)}
         ref={(ref: FieldsMethods) => fieldRef = ref}
-      >
+      />
 
-      </Fields>
+      
     </div>
   );
 }

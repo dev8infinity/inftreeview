@@ -11,5 +11,6 @@ export interface InfTreeViewMethods {
     getJson: () => Object;
     getData: () => Object;
     updateSelectedNodeText: (text: string) => void;
-    updateFromJson: (jsonString: string) => void;
+    updateFromJson: (jsonString: string) => boolean;
 }
+export type NestedObject = { [key: string]: string | NestedObject };
